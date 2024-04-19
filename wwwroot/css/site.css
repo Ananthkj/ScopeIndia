@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ScopeIndia Image Section */
+/*#scope_img {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-image: url('/Images/Scope_project_Images/loginPage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}*/
+
+  /*  #scope_img img {
+        position: absolute;
+        height: 100px;
+        background-position: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 580px;
+        margin-top: 400px;
+    }*/
+/*End ScopeIndia Image Section */
+
+/* ScopeIndia Carousel Section */
+#carousel_container {
+    height: 400px;
+}
+/*End ScopeIndia Carousel Section */
+
+/* ScopeIndia Training Supports */
+#training div a img:hover {
+    border-bottom: 3px solid green;
+    padding: 5px;
+    transition: 0.3s;
+}
+/*End ScopeIndia Training Supports */
+
+
+/* Footer Section */
+#footer_contacts span a {
+    text-decoration: none;
+    padding: 5px;
+    color: wheat;
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+          rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/css/Dashboard.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()"><span class="material-icons-outlined">menu</span></div>
+            <div class="header-left"><span class="material-icons-outlined">search</span></div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_box</span>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Sidebar -->
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand"><span class="material-icons-outlined">inventory</span>Student Details</div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item"><span class="material-icons-outlined">dashboard</span><a>Dashboard</a></li>
+                <li class="sidebar-list-item"><span class="material-icons-outlined">people</span><a href="studentstable">Students</a></li>
+            </ul>
+        </sidebar>
+        <!-- End Sidebar -->
+        <!-- Main -->
+        <main class="main">
+            <div class="main-title">
+                <p class="font-weight-bold">Dashboard</p>
+            </div>
+            <div class="main-cards">
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="test-primary">Students</p>
+                        <span class="material-icons-outlined text-blue">inventory_2</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">249</span>
+
+                </div>
+                <div class="card">
+
+                    <div class="card-inner">
+                        <p class="test-primary">Courses</p>
+                        <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">25</span>
+
+                </div>
+            </div>
+            <!-- Charts -->
+            <div class="charts">
+                <div class="charts-card">
+                    <p class="chart-title">Students</p>
+                    <div id="bar-chart"></div>
+                </div>
+                <div class="charts-card">
+                    <p class="chart-title">Software Courses</p>
+                    <div id="area-chart"></div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- End Main -->
+
+    </div>
+
+
+
+    <!-- Script -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.2/apexcharts.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="javascript/Dashboard.js"></script>
+</body>
+
+</html>

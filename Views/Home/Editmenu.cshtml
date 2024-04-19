@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ScopeIndia.styles.css" asp-append-version="true" />
+    @{
+        Layout = null;
+    }
+    <title>Edit Form</title>
+</head>
+
+<body>
+    <h2 class="">Edit Profile</h2>
+    <div class="container text-center">
+       <form action="Editmenu" method="post">
+        <table class="table table-dark">
+            <thead class="fs-3">
+            <th>Register Form</th>
+            <th>Edit</th>
+            </thead>
+            <tbody class="text-center">
+                <tr class="table-active">
+                    <td>Fullname:</td>
+                    <td><input class="col-8" type="text" name="fname" value="@ViewBag.Name"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td> <input class="col-8" type="text" name="dob" value="@ViewBag.dob"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Gender:</td>
+                    <td> <input class="col-8" type="text" name="gender" value="@ViewBag.gender"></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td> <input class="col-8" type="text" name="Qualification" value="@ViewBag.Qualification"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Course:</td>
+                    <td> <input class="col-8" type="text" name="course" value="@ViewBag.courses"></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td> <input class="col-8" type="text" name="mobile" value="@ViewBag.mobile"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Email:</td>
+                    <td> <input class="col-8" type="text" name="email" value="@ViewBag.Email"></td>
+                </tr>
+                <tr>
+                    <td>Guardian contact:</td>
+                    <td> <input class="col-8" type="text" name="guardian" value="@ViewBag.guardiancontact"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Class Mode:</td>
+                    <td> <input class="col-8" type="text" name="classmode" value="@ViewBag.classmode"></td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td> <input class="col-8" type="text" name="location" value="@ViewBag.branch"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Guardian Name:</td>
+                    <td> <input class="col-8" type="text" name="guardianname" value="@ViewBag.guardianname"></td>
+                </tr>
+                <tr>
+                    <td>Guardian Occupation:</td>
+                    <td> <input class="col-8" type="text" name="guardianoccupation" value="@ViewBag.guardianoccupation"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Timing:</td>
+                    <td> <input class="col-8" type="text" name="timing" value="@ViewBag.classtiming"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td> <input class="col-8" type="text" name="address" value="@ViewBag.address"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>Country:</td>
+                    <td> <input class="col-8" type="text" name="country" value="@ViewBag.country"></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td> <input class="col-8" type="text" name="state" value="@ViewBag.state"></td>
+                </tr>
+                <tr class="table-active">
+                    <td>City:</td>
+                    <td> <input class="col-8" type="text" name="city" value="@ViewBag.city"></td>
+                </tr>
+                <tr>
+                    <td>Pincode:</td>
+                    <td> <input class="col-8" type="text" name="pincode" value="@ViewBag.pincode"></td>
+                </tr>
+               
+
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-3 d-flex justify-content-end">
+                    <input class="form-control bg-dark text-light fs-3" type="submit" value="Update" />
+            </div>
+        </div>
+            
+        </form>
+    </div>
+
+
+</body>
+
+</html>

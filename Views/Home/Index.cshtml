@@ -1,0 +1,294 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <!-- Custom Boostrap cdn Link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* ScopeIndia Image Section */
+        #scope_img {
+            height: 800px;
+            width: 100%;  
+        }
+        /*End ScopeIndia Image Section */
+
+        /* ScopeIndia Carousel Section */
+        #carousel_container {
+            height: 400px;
+        }
+        /*End ScopeIndia Carousel Section */
+
+        /* ScopeIndia Training Supports */
+        #training div a img:hover {
+            border-bottom: 3px solid green;
+            padding: 5px;
+            transition: 0.3s;
+        }
+        /*End ScopeIndia Training Supports */
+
+
+        /* Footer Section */
+        #footer_contacts span a {
+            text-decoration: none;
+            padding: 5px;
+            color: wheat;
+        }
+
+    </style>
+</head>
+
+<body style="background-color:#050a4c">
+    <section class="w-100" style="border:1px solid #050a4c;margin-top:-2%;">
+    <!-- ScopeIndia Main Image section -->
+        <section class="border border-2 border-dark" style="margin-left:-2%;margin-right:-2%">
+            <div id="scope_img" style="background-color:#050a4c;background-image:url('Images/loginPage.jpg');background-size:cover;background-position:center;background-repeat:no-repeat">
+                <img class="img-fluid" src="/Images/snowpark-home-slider-logo-size.png" alt="ScopeIndia" height="400px" width="400px" style="margin-left:40%;margin-top:25%">
+        </div>
+    </section>
+    <!--End ScopeIndia Main Image section -->
+    <!-- Carousal Section -->
+    <section id="carousel_container" style="height: 600px;">
+        <div id="carouselExampleInterval" class="carousel slide border border-2 border-dark" data-bs-ride="carousel" style="height: 600px;">
+            <div class="carousel-inner bg-primary" style="background-image: url('Images/blueimage.jpg');background-size:cover ">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div>
+                            <img src="/Images/scope-india-php-full-stack-course (1).jpg" class="d-block w-95"
+                             alt="First Slide" width="1000" height="600" style="margin: auto;">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./Images/scope-india-php-full-stack-course (1).jpg" class="d-block w-90"
+                         alt="Second Slide" width="1000" height="600" style="margin: auto;">
+                </div>
+                <div class="carousel-item">
+                        <img src="~/Images/scope-india-flutter-fullstack-course.jpg" class="d-block w-90" alt="Third Slide"
+                         width="1000" height="600" style="margin: auto;">
+                </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/Scope_project_Images/scope-india-php-full-stack-course (1).jpg" class="d-block w-90" alt="Third Slide"
+                             width="1000" height="600" style="margin: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/scope-india-software-testing-manual-automation-course.jpg" class="d-block w-90" alt="Third Slide"
+                             width="1000" height="600" style="margin: auto;">
+                    </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <!--End Carousal Section -->
+
+    <!-- ScopeIndia Customer Call section -->
+    <section>
+        <div class="container-fluid text-center p-2 d-flex justify-content-center align-items-center"
+             style="height: 600px;margin: 5px; background-image: url('/Images/Blue-dotted-Background-images.jpg');background-position: center; background-repeat: no-repeat;background-size: cover;">
+            <div class="row " style="height: 500px; width: 900px;">
+                <div class="col"
+                     style="margin: 2px;background-image: url('/Images/9745936073,7592939481.png'); background-position: center; background-repeat: no-repeat;background-size: cover;">
+                    <!-- <img src="/Images/scope-india-flutter-fullstack-course.jpg" alt="" height="300px" width="300px"> -->
+                    <h1>Free Consultation</h1>
+                    <img src="" alt="">
+                </div>
+                <div class="col bg-primary-subtle" style="margin: 2px;">
+                    <h3 class="bg-info mt-3 p-2">24/7 Customer Support</h3>
+                    <p>We are open 7 days 24 hrs to talk to you and listen to your queries.</p>
+                    <h1>GET A FREE CALL BACK</h1>
+                    <form action="">
+                        <input class="form-control p-2 mb-3" type="text" placeholder="Enter your name">
+                        <input class="form-control p-2" type="text" placeholder="Enter your Phone no.">
+                        <button type="submit" class="btn col-4 mt-3 btn-primary">Call us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--End ScopeIndia Customer Call section -->
+
+    <!-- ScopeIndia Main Section -->
+    <section>
+        <main class="bg-light">
+            <div class="container text-center bg-light p-3" style="color: #050a4c;">
+                <div>
+                    <img src="~/Images/5star_scope.png" alt="Start rating" height="150px">
+                    <p>Google 4.9 * Rated Institute</p>
+                </div>
+                <h1 class="p-1">SCOPE INDIA, your career partner!</h1>
+                <h2 class="p-1">
+                    One of the best Training Destination for Software, Networking and Cloud Computing
+                    courses in India
+                </h2>
+                <p class="text-start p-3" style="color: #050a4c;">
+                    Software, Networking, and Cloud Professional Education
+                    Centre in Kerala from Suffix E Solutions with WORKING PROFESSIONALS oriented on-the-job TRAINING
+                    model. SCOPE INDIA provides courses for <b> Software Programming</b> in Python (Data Science |
+                    Artificial Intelligence | Machine Learning | Deep Learning), Java, PHP, .Net,<b>Software Testing</b>
+                    Manual and Automation, <b> Cloud</b> in AWS, Azure,<b> Server Administration</b> in MCSE, and
+                    RHCE,<b> CCNA, Mobile App Development</b> in Flutter, and,<b>Digital Marketing.</b> Training with
+                    100% Trusted Job Based Internship Model. SCOPE INDIA has a Strong Placement Cell that provides jobs
+                    to 1000's of students every year. We assure you, you won't regret it after training from SCOPE
+                    INDIA!
+                </p>
+                <p class="text-start p-2">
+                    This is how SCOPE INDIA can support both newbies and experienced in the
+                    industry to upgrade their skills.
+                </p>
+
+                <div class="container text-center p-3"
+                     style="margin: 2px; font-size: 20px;">
+                    <div class="row p-2 mb-3 text-light"
+                         style="border-radius: 5px; background-color: #7c62bd;">
+                        <div class="col">
+                            Recent Placements
+                        </div>
+                    </div>
+                    <div class="row p-2 mb-3 bg-info text-light"
+                         style="border-radius: 5px;">
+                        <div class="col">
+                            Courses
+                        </div>
+                    </div>
+                    <div class="row p-2 mb-3 bg-success text-light"
+                         style="border-radius: 5px;">
+                        <div class="col">
+                            Register Now!
+                        </div>
+                    </div>
+                    <div class="row p-2 bg-success text-light" style="border-radius: 5px;">
+                        <div class="col">
+                            <i class="bi bi-whatsapp"></i> Chat on Whatsapp
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+    <!--End ScopeIndia Main Section -->
+
+    <!-- ScopeIndia Training Section -->
+    <section class="border border-2 border-light bg-light bg-l">
+        <div class="container text-center p-3 d-flex bg-light justify-content-center align-items-center" style="height: 400px;">
+            <div id="training" class="row p-2">
+                <div class="col-3 p-2">
+                    <a href="#">
+                        <img src="https://scopeindia.org/images/snowpark-home-icon1.png" alt="" height="80px"
+                             width="80px">
+                    </a>
+                    <h1 class="p-1">Training</h1>
+                    <p class="p-1">
+                        You are trained under Suffix E Solutions working professionals, on-the-job training
+                        model.
+                    </p>
+                </div>
+                <div class="col-3 p-2">
+                    <a href="#">
+                        <img src="https://scopeindia.org/images/snowpark-home-icon2.png" alt="" height="80px"
+                             width="80px">
+                    </a>
+                    <h1 class="p-1">Internship</h1>
+                    <p>
+                        After course completion, you will be proceeded to live projects with a 6 months
+                        experience certificate.
+                    </p>
+                </div>
+                <div class="col-3 p-2">
+                    <a href="#">
+                        <img src="	https://scopeindia.org/images/snowpark-home-icon3.png" alt="" height="80px"
+                             width="80px">
+                    </a>
+                    <h1 class="p-1">Grooming</h1>
+                    <p class="p-1">CV Preparation, Interview Preparation, and Personality Development.</p>
+                </div>
+                <div class="col-3 p-2">
+                    <a href="#">
+                        <img src="https://scopeindia.org/images/snowpark-home-icon4.png" alt="" height="80px"
+                             width="80px">
+                    </a>
+                    <h1 class="p-1">Placement</h1>
+                    <p class="p-1">
+                        Gives 100% FREE placement support to all our fellow techies through SCOPE INDIA's
+                        Placement Cell.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End ScopeIndia Training Section -->
+
+    <!-- ScopeIndia Footer Section -->
+    <section>
+        <footer class="container-fluid text-center p-3 " style="background-color: #050a4c;">
+            <!-- Content section -->
+            <section class="text-light border-dark d-flex justify-content-center align-items-center text-center"
+                     style="height: 300px; background-color: #050a4c;">
+                <div style="width: 400px;">
+                    <h1 class="text-info text-center">1000+</h1>
+                    <h3>STUDENTS ARE TRAINED EVERY YEAR</h3>
+                </div>
+                <div class="d-flex align-self-start p-2" style="width: 400px;">
+                    <h1 class="text-info"> 30+ </h1>
+                    <h3>COMPUTER COURSES</h3>
+                </div>
+                <div style="width: 400px;">
+                    <h1 class="text-info">95%</h1>
+                    <h3>STUDENTS ARE GETTING PLACED EVERY YEAR</h3>
+                </div>
+            </section>
+            <!-- Image section -->
+            <section class="text-light d-flex justify-content-center align-items-center text-center"
+                     style="height: 500px; background-color: #050a4c;">
+                <div class="d-flex-flex-column justify-content-center align-items-center">
+                    <img src="https://scopeindia.org/images/snowpark-footer-logo.png" alt=""
+                         style="background-color:#050a4c;text-align: center;">
+                    <h5>Technopark TVM | Thampanoor TVM | Kochi, Kerala | Nagercoil, Tamil Nadu</h5>
+                    <img src="https://scopeindia.org/images/iso_iaflogo.png" alt="" height="100px" width="400px">
+                    <p>An ISO 9001:2015 Certified Company</p>
+                    <p>All Rights Reserved Suffix E Solutions © 2007-2023</p>
+                    <div id="footer_contacts" class="p-1  d-flex justify-content-evenly align-items-center"
+                         style="width: 1000px;">
+                        <span><a href="#"> 9745936073 (TPK)</a></span>
+                        <span><a href="#"> 9745936073 (TVM)</a></span>
+                        <span><a href="#"> 7592939481 (EKM)</a></span>
+                        <span><a href="#"> 8075536185 (NGL)</a></span>
+                        <span><a href="#">info@scopeindia.org</a></span>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+    </section>
+    <!--End ScopeIndia Footer Section -->
+
+    <!--End Custom Script Section -->
+    </section>
+</body>
+
+</html>

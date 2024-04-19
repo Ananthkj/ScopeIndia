@@ -1,0 +1,61 @@
+﻿
+
+<style>
+    body{
+        /* background-color:indianred; */
+        background-image: url('/Images/login2.jpg');
+        background-position:center;
+    }
+</style>
+
+
+<body>
+
+<div class="container text-center p-3" id="contactus" style="width:700px;">
+    <form asp-action="ContactUs" method="post">
+        <div class="row p-2 mb-1">
+            <div class="col-4">
+                <label class="form-label">Name: </label>
+            </div>           
+             <div class="col-6">
+                    <input class="form-control" type="text" name="name"/>
+             </div>         
+        </div>
+        <div class="row p-2 mb-1">
+            <div class="col-4">
+                <label class="form-label">Email: </label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text" name="email" />
+            </div>
+        </div>
+        <div class="row p-2 mb-1">
+            <div class="col-4">
+                <label class="form-label">Contact No: </label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text" name="contact" />
+            </div>
+        </div>
+        <div class="row p-2 mb-1">
+            <div class="col-4">
+                <label class="form-label">Subject: </label>
+            </div>           
+             <div class="col-6">
+                    <input class="form-control" type="text" name="Subject"/>
+             </div>         
+        </div>
+        <div class="row p-2 mb-1">
+            <div class="col-4">
+                <label class="form-label">Message: </label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text" name="message" style="height:200px;width:300px;"/>
+            </div>
+        </div>
+        <div class="p-2 mb-1">
+            <button class="btn btn-danger" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>

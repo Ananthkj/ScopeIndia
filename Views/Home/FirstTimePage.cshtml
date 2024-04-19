@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Register Id";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="FirstTimePage" method="post">
+    <div class="row">
+        <div class="col-1">
+            <label class="form-label fs-4">Email:</label>          
+        </div>
+        <div class="col-5">          
+            <input type="email" class="form-control" name="Email" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <input type="submit" value="Submit" class="form-control" />
+        </div>
+    </div>
+</form>
+
+<h1>@ViewBag.Message</h1>
+<script>
+
+</script>
